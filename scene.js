@@ -283,9 +283,9 @@ async function init() {
     const wide = camera.aspect > 1.1;
     group.position.set(toFace * (wide ? 2.4 : 0), toFace * (wide ? 0 : 1.2), 0);
 
-    // Portrait turns as you keep scrolling once it has formed
-    const hold = sstep(1.55, 2, uP) * sstep(0.85, 1, p) ;
-    group.rotation.y = toFace * (-0.45 + hold * 0.9 + sstep(1.55, 2, uP) * 0.2) + (1 - toFace) * uniforms.uTime.value * 0.05;
+    // Portrait eases round to almost face-on once it has formed, then holds
+    const hold = sstep(1.55, 2, uP) * sstep(0.85, 1, p);
+    group.rotation.y = toFace * (-0.45 + hold * 0.18 + sstep(1.55, 2, uP) * 0.2) + (1 - toFace) * uniforms.uTime.value * 0.05;
 
     renderer.render(scene, camera);
   };

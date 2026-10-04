@@ -440,29 +440,6 @@ html.js .loader {
 }
 @keyframes drip { to { top: 100%; } }
 
-/* ---------- Marquee ---------- */
-
-.marquee {
-  position: relative;
-  overflow: hidden;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  padding: 22px 0;
-  background: var(--ink);
-}
-.marquee__track {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  width: max-content;
-  font-size: clamp(1.4rem, 3vw, 2.6rem);
-  font-weight: 500;
-  letter-spacing: -0.03em;
-  white-space: nowrap;
-  padding-right: 40px;
-}
-.marquee__track b { color: var(--accent); font-weight: 400; font-size: 0.8em; }
-
 /* ---------- Latent scene ---------- */
 
 .latent { position: relative; height: 420vh; background: var(--ink); }

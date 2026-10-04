@@ -447,21 +447,6 @@ function init() {
   function buildScrollScenes(lenis, portrait) {
     const mm = gsap.matchMedia();
 
-    /* Marquee, speed follows scroll velocity */
-    const track = $('.marquee__track');
-    track.innerHTML += track.innerHTML;
-    if (!reduceMotion) {
-      const mq = gsap.to(track, { xPercent: -50, duration: 36, ease: 'none', repeat: -1 });
-      let dir = 1;
-      if (lenis) {
-        lenis.on('scroll', ({ velocity }) => {
-          if (velocity !== 0) dir = velocity > 0 ? 1 : -1;
-          gsap.to(mq, { timeScale: dir * (1 + Math.min(Math.abs(velocity) * 0.25, 5)), duration: 0.3, overwrite: true });
-          gsap.to(mq, { timeScale: dir, duration: 1.2, delay: 0.3 });
-        });
-      }
-    }
-
     if (reduceMotion) { setupLoop(); setupProjects(); setupHonors(); setupWarRoom(); setupLadder(); setupNer(); return; }
 
     /* Display headings: line mask reveal */
