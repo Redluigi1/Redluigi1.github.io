@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Ayush Kumar · AI Engineer</title>
+  <meta name="description" content="Ayush Kumar is an AI engineer building LLM and agentic systems that hold up in production. Self-improving warranty adjudication at Ola Electric, agentic research at IIT Guwahati." />
+  <meta name="theme-color" content="#0b0b0a" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ayush Kumar · AI Engineer" />
+  <meta property="og:description" content="LLM and agentic systems that hold up in production, and get better every day they run." />
+  <meta property="og:url" content="https://redluigi1.github.io/" />
+  <meta property="og:image" content="https://redluigi1.github.io/assets/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__stream" data-stream></div>
+    <div class="loader__count"><span data-count>000</span><small>/100</small></div>
+    <div class="loader__label">loading weights</div>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+
+  <!-- Nav -->
+  <header class="nav">
+    <a href="#top" class="nav__logo" aria-label="Ayush Kumar, back to top">
+      <span class="nav__mark">AK</span>
+      <span class="nav__name">Ayush Kumar</span>
+    </a>
+    <div class="nav__status"><span class="dot"></span>Open to AI / LLM engineering roles</div>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#cases" data-hover>Case studies</a>
+      <a href="#work" data-hover>Work</a>
+      <a href="#path" data-hover>Path</a>
+      <a href="#contact" data-hover>Contact</a>
+    </nav>
+    <div class="nav__time mono"><span data-clock>--:--</span> BLR</div>
+    <button class="nav__burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  </header>
+
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu__links" aria-label="Mobile">
+      <a href="#cases"><span class="mono">01</span>Cases</a>
+      <a href="#work"><span class="mono">02</span>Work</a>
+      <a href="#path"><span class="mono">03</span>Path</a>
+      <a href="#contact"><span class="mono">04</span>Contact</a>
+    </nav>
+    <div class="menu__foot mono">
+      <a href="mailto:ayush171003@gmail.com">ayush171003@gmail.com</a>
+      <a href="assets/Ayush_Kumar_Resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" data-hero>
+      <h1 class="hero__name">
+        <span class="sr-only">Ayush Kumar</span>
+        <span class="hero__line hero__line--1" aria-hidden="true"><span class="split">Ayush</span></span>
+        <span class="hero__line hero__line--2" aria-hidden="true"><span class="split serif">Kumar</span></span>
+      </h1>
+
+      <div class="hero__portrait" data-portrait>
+        <canvas class="hero__canvas" aria-hidden="true"></canvas>
+        <img class="hero__img" src="assets/img/portrait-cut-1200.webp" srcset="assets/img/portrait-cut-700.webp 700w, assets/img/portrait-cut-1200.webp 1200w" sizes="(max-width: 860px) 100vw, 64vw" alt="Ayush Kumar, smiling in sunglasses against a dark background" width="1200" height="1188" />
+        <span class="hero__hint mono">hover to see what the model sees</span>
+      </div>
+
+      <div class="hero__meta mono">
+        <p><span class="idx">(01)</span> AI Engineer</p>
+        <p>LLM &amp; Agentic Systems</p>
+        <p>Bengaluru, IN</p>
+        <p class="hero__now">Now · Applied AI, Ola Electric</p>
+      </div>
+
+      <p class="hero__intro">
+        I build <em class="serif">LLM systems</em> that hold up in production, and get a little better every day they run.
+      </p>
+
+      <div class="hero__foot mono">
+        <span class="hero__scroll"><i></i> Scroll to explore</span>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-label="Highlights">
+      <div class="marquee__track">
+        <span>$1M / month saved</span><b>✳</b>
+        <span>50M+ daily API calls</span><b>✳</b>
+        <span>4,000+ technicians onboarded</span><b>✳</b>
+        <span>Gold, Inter-IIT Tech Meet</span><b>✳</b>
+        <span>LREC 2026 submission</span><b>✳</b>
+        <span>Codeforces 1727</span><b>✳</b>
+      </div>
+    </div>
+
+    <!-- ============ LATENT (WebGL scroll scene) ============ -->
+    <section class="latent" aria-label="Noise to structure to signal">
+      <div class="latent__sticky">
+        <canvas class="latent__canvas" aria-hidden="true"></canvas>
+        <div class="latent__vignette" aria-hidden="true"></div>
+        <div class="latent__hud mono" aria-hidden="true">
+          <span>latent_space.render()</span>
+          <span><span data-latent-pct>000</span> / 100</span>
+        </div>
+        <ol class="latent__caps">
+          <li class="latent__cap" data-cap="0">
+            <span class="mono"><span class="idx">01</span> Noise</span>
+            <p>Every system starts as <em class="serif">noise.</em></p>
+          </li>
+          <li class="latent__cap" data-cap="1">
+            <span class="mono"><span class="idx">02</span> Structure</span>
+            <p>Then you give it <em class="serif">structure:</em> retrieval, agents, evals.</p>
+          </li>
+          <li class="latent__cap" data-cap="2">
+            <span class="mono"><span class="idx">03</span> Signal</span>
+            <p>Until it's something you'd <em class="serif">trust</em> with real money.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about section" id="about">
+      <div class="section__label mono"><span class="idx">(02)</span> About</div>
+      <div class="about__grid">
+        <p class="about__lede" data-words>
+          I'm an AI engineer out of IIT Guwahati. I like the part of LLM work that happens after the demo: evals, failure modes, feedback loops, and the slightly unglamorous plumbing that makes a model trustworthy enough to touch money. I'd rather own a hard problem end to end than a safe slice of an easy one.
+        </p>
+        <ul class="about__facts mono">
+          <li><span>Focus</span>Agentic RAG, LLM evaluation, multi-agent orchestration</li>
+          <li><span>Stack</span>Python, LangGraph, MCP, FastAPI, PyTorch</li>
+          <li><span>Education</span>B.Tech CSE, minor in Data Science &amp; AI · 8.92</li>
+          <li><span>Base</span>Bengaluru, India</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ NUMBERS ============ -->
+    <section class="stats section" aria-label="Impact in numbers">
+      <div class="stats__grid">
+        <div class="stat">
+          <div class="stat__num"><span class="cur">$</span><span data-count-to="1">1</span><span class="unit">M</span></div>
+          <p>saved every month by an LLM pipeline that adjudicates warranty claims</p>
+        </div>
+        <div class="stat">
+          <div class="stat__num"><span data-count-to="67">67</span><span class="unit">%</span></div>
+          <p>fewer daily claims, 1,500 down to 500, once evidence-based auto-rejection closed a fraud loop</p>
+        </div>
+        <div class="stat">
+          <div class="stat__num"><span data-count-to="50">50</span><span class="unit">M+</span></div>
+          <p>daily autocomplete calls served by the NER model I trained for Ola Maps</p>
+        </div>
+        <div class="stat">
+          <div class="stat__num"><span data-count-to="4000" data-format>4,000</span><span class="unit">+</span></div>
+          <p>technicians onboarded onto a CRM we built in 10 days to replace Salesforce</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="cases" id="cases">
+
+    <!-- ============ CASE 01 · THE LOOP ============ -->
+    <section class="loop section" id="loop">
+      <div class="loop__head">
+        <div class="section__label mono"><span class="idx">(03)</span> Case study 01 / 04 · Ola Electric</div>
+        <h2 class="display">A pipeline that <em class="serif">learns from</em> its own mistakes.</h2>
+        <p class="loop__sub">Technicians were claiming replacements for healthy parts and reselling the originals. Reviewing 1,500 claims a day by hand didn't scale and didn't catch it. So we built agents that read the evidence the way a senior reviewer would, and a loop that turns every disagreement with a human into a better rulebook.</p>
+      </div>
+
+      <div class="loop__body">
+        <div class="loop__visual" aria-hidden="true">
+          <svg viewBox="0 0 600 600" class="loop__svg">
+            <defs>
+              <linearGradient id="arcGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ff5a1f" />
+                <stop offset="1" stop-color="#ffb37a" />
+              </linearGradient>
+            </defs>
+            <circle class="loop__track" cx="300" cy="300" r="230" />
+            <circle class="loop__ticks" cx="300" cy="300" r="258" />
+            <circle class="loop__arc" cx="300" cy="300" r="230" transform="rotate(-90 300 300)" />
+            <g class="loop__nodes"></g>
+            <circle class="loop__runner" r="7" cx="300" cy="70" />
+          </svg>
+          <div class="loop__center">
+            <div class="mono loop__center-label">agreement with human reviewers</div>
+            <div class="loop__acc"><span data-acc>86</span><small>%</small></div>
+            <div class="mono loop__center-sub">version <span data-ver>v1.0</span></div>
+          </div>
+        </div>
+
+        <ol class="loop__steps">
+          <li class="step" data-step="0">
+            <span class="step__n mono">01 / Claim</span>
+            <h3>A claim comes in</h3>
+            <p>A technician files a replacement with evidence: voltage readings, part diagnostics, SOP videos. The scooter's telematics come along too, often thousands of raw sensor readings.</p>
+          </li>
+          <li class="step" data-step="1">
+            <span class="step__n mono">02 / Agent</span>
+            <h3>One agent per part</h3>
+            <p>Motor, battery, VCU and BMS each get a dedicated LangGraph agent with that part's SOP and failure signatures. I compressed telematics with PAA into a few hundred segments, which cut token cost roughly in half without losing the signal.</p>
+          </li>
+          <li class="step" data-step="2">
+            <span class="step__n mono">03 / Audit</span>
+            <h3>Humans audit a sample</h3>
+            <p>Every day, reviewers check a slice of decisions and flag disagreements: wrong approvals, wrong rejections, and right answers reached for the wrong reason.</p>
+          </li>
+          <li class="step" data-step="3">
+            <span class="step__n mono">04 / Classify</span>
+            <h3>Separate signal from noise</h3>
+            <p>Each disagreement is structured and labelled as a missing rule, an ambiguous rule, two rules in conflict, or a one-off slip. A fix is only proposed once several similar misses cluster together, so the prompt doesn't rot into contradictions.</p>
+          </li>
+          <li class="step" data-step="4">
+            <span class="step__n mono">05 / Patch</span>
+            <h3>Patch at the anchor</h3>
+            <p>The policy lives in one large prompt with anchors marking where each piece of logic sits. Fixes land surgically at an anchor instead of rewriting the whole thing, which is also where a big chunk of the token savings came from.</p>
+          </li>
+          <li class="step" data-step="5">
+            <span class="step__n mono">06 / Verify</span>
+            <h3>Golden set, then shadow traffic</h3>
+            <p>Every patch runs against a golden set: the cases that triggered it plus nearby cases it used to get right. Then a day in shadow on live traffic. A false approval costs real money, so anything that could raise them waits for a human sign-off.</p>
+          </li>
+          <li class="step" data-step="6">
+            <span class="step__n mono">07 / Ship</span>
+            <h3>Promote, keep every version</h3>
+            <p>Passing patches go live, every version is kept for instant rollback, and the loop starts again tomorrow. Agreement with human reviewers went from 86% to 90%, and daily claims dropped from 1,500 to 500.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CASE 02 · SAFAI WAR ROOM ============ -->
+    <section class="war section" id="warroom" aria-labelledby="war-title">
+      <div class="case__head">
+        <div class="section__label mono"><span class="idx">(03)</span> Case study 02 / 04 · Ola Electric</div>
+        <h2 class="display" id="war-title">Ten days to replace <em class="serif">Salesforce.</em></h2>
+        <p class="case__sub">The Salesforce contract was running out and the service network couldn't stop for a migration. Five of us rebuilt the CRM in Spring Boot in ten days: tickets, inventory, billing, insurance and pan-India role-based access, with every historical job card carried over. I owned the warranty and insurance integrations with Reliance, Acko and Ola, each with its own eligibility rules and invoice format.</p>
+      </div>
+
+      <div class="sprint" aria-label="The ten-day build">
+        <div class="sprint__top mono">
+          <span>Day <b data-sprint-day>00</b> / 10</span>
+          <span>5 engineers · Spring Boot</span>
+        </div>
+        <ol class="sprint__bar" aria-hidden="true">
+          <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+        </ol>
+        <ul class="sprint__mods mono">
+          <li>Tickets</li><li>Inventory</li><li>Billing</li><li>Insurance APIs</li><li>Pan-India RBAC</li><li>5M+ job cards migrated</li><li>Go live</li>
+        </ul>
+      </div>
+
+      <div class="war__room">
+        <div class="war__copy">
+          <span class="step__n mono">Then, launch week</span>
+          <h3>So I gave it an <em class="serif">on-call engineer.</em></h3>
+          <p>A CRM built in ten days has a rough first week. Rather than triage every broken record by hand, I built a war-room agent on MCP that reads the codebase and the database, works out why a job card is stuck, fixes the data and raises the code fix as a PR. Anything destructive waits for a human yes in Slack.</p>
+          <div class="war__count">
+            <div class="war__num"><span data-war-count>0</span></div>
+            <p class="mono">job cards repaired by the agent</p>
+          </div>
+        </div>
+
+        <figure class="term" aria-label="Example of an agent trace">
+          <div class="term__bar"><i></i><i></i><i></i><span class="mono">#safai-warroom</span></div>
+          <ol class="term__lines">
+            <li><time>09:14</time><b class="t-alert">alert</b>JC-48213 stuck in INVOICE_PENDING</li>
+            <li><time>09:14</time><b>agent</b>search_code("InvoiceService.generate")</li>
+            <li><time>09:15</time><b>agent</b>query_db("job_cards where status = 'INVOICE_PENDING'")</li>
+            <li><time>09:15</time><b>agent</b>cause: insurer code missing on migrated cards</li>
+            <li><time>09:16</time><b>agent</b>same pattern on 212 cards</li>
+            <li><time>09:16</time><b class="t-wait">hold</b>write touches 212 rows. Asking a human in Slack</li>
+            <li><time>09:21</time><b class="t-ok">human</b>approved</li>
+            <li><time>09:22</time><b>agent</b>backfill done, PR opened: null-safe insurer lookup</li>
+            <li><time>09:22</time><b class="t-ok">done</b>212 job cards moving again</li>
+          </ol>
+          <figcaption class="mono">Illustrative trace. Names and numbers simplified.</figcaption>
+        </figure>
+      </div>
+
+      <div class="case__metrics">
+        <div><b>10</b><span>days from blank repo to go-live</span></div>
+        <div><b>5M+</b><span>historical job cards migrated</span></div>
+        <div><b>4,000+</b><span>technicians onboarded</span></div>
+        <div><b>25K</b><span>parts moved through it daily</span></div>
+      </div>
+    </section>
+
+    <!-- ============ CASE 03 · RESEARCH ============ -->
+    <section class="research section" id="research" aria-labelledby="research-title">
+      <div class="case__head">
+        <div class="section__label mono"><span class="idx">(03)</span> Case study 03 / 04 · Research, IIT Guwahati</div>
+        <h2 class="display" id="research-title">Agents that <em class="serif">argue,</em> then check each other's work.</h2>
+        <p class="case__sub">Argument mining turns prose into a graph of claims, premises and the links between them. The usual answer is a fine-tuned model, which needs piles of labelled data and stumbles on unfamiliar text. With Prof. Ashish Anand, I made the opposite bet: no fine-tuning at all, just three agents and very carefully chosen examples.</p>
+      </div>
+
+      <figure class="am" aria-label="Example: a premise supporting a claim">
+        <div class="am__node am__node--claim"><small class="mono">Claim</small><span>We must invest in solar energy.</span></div>
+        <div class="am__rel" aria-hidden="true"><svg viewBox="0 0 120 24" preserveAspectRatio="none"><path d="M118 12 H8 M16 4 L6 12 L16 20" /></svg><span class="mono">supports</span></div>
+        <div class="am__node am__node--premise"><small class="mono">Premise</small><span>It significantly reduces carbon emissions.</span></div>
+      </figure>
+
+      <div class="research__body">
+        <ol class="phases">
+          <li class="phase">
+            <span class="step__n mono">01 / Remember</span>
+            <h3>Index meaning <em class="serif">and</em> shape</h3>
+            <p>Every training paragraph is stored twice: as an embedding in ChromaDB, and as a discourse tensor from a DMRST parser that captures how the argument is built. Spectral similarity links paragraphs with the same shape into a NetworkX graph, whatever they're about.</p>
+          </li>
+          <li class="phase">
+            <span class="step__n mono">02 / Retrieve</span>
+            <h3>Find examples that think alike</h3>
+            <p>A new paragraph pulls its five nearest neighbours by meaning, expands two hops through the structure graph to about fifteen candidates, and keeps the five that score best on a blend of semantic and discourse similarity.</p>
+          </li>
+          <li class="phase">
+            <span class="step__n mono">03 / Argue</span>
+            <h3>Extract, relate, critique</h3>
+            <p>One agent extracts claims and premises, one maps supports and attacks, and a reviewer checks the graph for logical holes. If it fails, the feedback goes into a shared state and the agents try again, up to three rounds.</p>
+          </li>
+        </ol>
+
+        <figure class="ladder" data-ladder>
+          <div class="ladder__head">
+            <figcaption>
+              <span class="mono">Each change, measured</span>
+              <b>Scores on the AAEC essays benchmark</b>
+            </figcaption>
+            <div class="ladder__tabs mono" role="group" aria-label="Metric">
+              <button aria-pressed="true" data-metric="aci">Components</button>
+              <button aria-pressed="false" data-metric="acc">Types</button>
+              <button aria-pressed="false" data-metric="ari">Relations</button>
+            </div>
+          </div>
+          <div class="ladder__plot">
+            <ol class="ladder__rows"></ol>
+            <div class="ladder__ref" data-ref="tanl"><span class="mono">TANL</span></div>
+            <div class="ladder__ref" data-ref="denim"><span class="mono">DENIM</span></div>
+          </div>
+          <p class="ladder__note mono">Grey: GPT-OSS-20B. Orange: GPT-5 Mini. Dashed: fine-tuned state of the art.</p>
+          <div class="ladder__tip mono" role="status" aria-live="polite"></div>
+        </figure>
+      </div>
+
+      <div class="case__metrics">
+        <div><b>4 / 4</b><span>metrics above fine-tuned SOTA, zero fine-tuning</span></div>
+        <div><b>0.649</b><span>component score, vs 0.621 for DENIM</span></div>
+        <div><b>81 → 444</b><span>paragraphs in the extended ARC policy corpus</span></div>
+        <div><b>LREC</b><span>2026 resource paper, submitted</span></div>
+      </div>
+      <div class="case__links">
+        <a href="https://drive.google.com/file/d/1YObYgloJ9JdzqAbwXHYYDWtuHa-Okzls/view?usp=sharing" target="_blank" rel="noopener" class="link">Read the report ↗</a>
+        <a href="https://github.com/Redluigi1/agentic_argument_mining" target="_blank" rel="noopener" class="link">GitHub ↗</a>
+      </div>
+    </section>
+
+    <!-- ============ CASE 04 · OLA MAPS ============ -->
+    <section class="maps section" id="maps" aria-labelledby="maps-title">
+      <div class="case__head">
+        <div class="section__label mono"><span class="idx">(03)</span> Case study 04 / 04 · Ola Krutrim, Ola Maps</div>
+        <h2 class="display" id="maps-title">Fifty million searches a day, <em class="serif">one address</em> at a time.</h2>
+        <p class="case__sub">Indian addresses don't follow a format. People type a flat number, a landmark, half a locality and a pincode, in any order. As an intern on Ola Maps I worked on both ends of a ride: finding the place, then predicting when you'll get there.</p>
+      </div>
+
+      <figure class="ner" data-ner aria-label="Example: an address query split into labelled parts">
+        <div class="ner__box">
+          <span class="ner__icon" aria-hidden="true"></span>
+          <span class="ner__query mono" data-ner-query></span><span class="ner__caret" aria-hidden="true"></span>
+        </div>
+        <div class="ner__out" data-ner-out></div>
+        <figcaption class="mono">Example queries. The model labels each span before search ranks results.</figcaption>
+      </figure>
+
+      <ul class="maps__list">
+        <li><span class="mono">Search</span><p>Productionised a spaCy NER address parser for autocomplete and forward geocoding, after benchmarking it against BERT-style transformers. Live, it lifted top-3 search accuracy by 2%.</p></li>
+        <li><span class="mono">ETA</span><p>Retuned the live historical ETA lookup with Bayesian optimisation in Optuna, on cyclic time features and geospatial ones. 60% of rides now land within 10% of the predicted ETA.</p></li>
+        <li><span class="mono">Thin data</span><p>Tier-3 cities don't have enough rides to learn from, so I clustered location services and road segments into sub-city zones with DBSCAN. Error there dropped by about 3 minutes.</p></li>
+        <li><span class="mono">Highways</span><p>Traced a systematic ETA overestimate on long highway segments back to the dataset logic and fixed it, and patched routing anomalies on newly built links.</p></li>
+        <li><span class="mono">EV pings</span><p>Showed that electric-vehicle ping data was dense enough to feed routing models, and tested bucketing schemes for predicting segment popularity.</p></li>
+      </ul>
+
+      <div class="case__metrics">
+        <div><b>50M+</b><span>autocomplete calls a day</span></div>
+        <div><b>+2%</b><span>top-3 search accuracy</span></div>
+        <div><b>60%</b><span>of rides within 10% of ETA</span></div>
+        <div><b>−3 min</b><span>ETA error in tier-3 cities</span></div>
+      </div>
+    </section>
+
+    </div>
+
+    <!-- ============ SELECTED WORK ============ -->
+    <section class="work section" id="work">
+      <div class="work__head">
+        <div class="section__label mono"><span class="idx">(04)</span> Selected work</div>
+        <h2 class="display">More things <em class="serif">I've shipped</em></h2>
+      </div>
+
+      <ul class="projects">
+        <li class="project" data-hover data-cursor="Open">
+          <button class="project__row" aria-expanded="false">
+            <span class="project__n mono">01</span>
+            <span class="project__title">PathLex <em class="serif">legal RAG</em></span>
+            <span class="project__tag mono">Inter-IIT 13 · Rank 4 / 22</span>
+            <span class="project__plus" aria-hidden="true"></span>
+          </button>
+          <div class="project__body">
+            <div class="project__inner">
+              <p>Generic RAG falls apart on legal text, where one answer needs clauses stitched together from different documents. We built on LLMCompiler, so a planner lays out a DAG of retrieval tasks up front and independent sub-queries run in parallel.</p>
+              <p>Retrieval goes through Voyage-Law2 and Cohere reranking, then an auto-merger that rejoins clauses split mid-chunk. A joiner grades whether the evidence actually answers the question and replans if not, falling back to a beam-search retriever for multi-hop chains, then to a human. Claude and OpenAI back each other up so one outage can't take it down.</p>
+              <div class="project__metrics">
+                <div><b>86%</b><span>on CUAD (contracts)</span></div>
+                <div><b>84%</b><span>on AILA (case law)</span></div>
+                <div><b>4th</b><span>of 22 IITs</span></div>
+              </div>
+              <div class="chips mono"><span>LLMCompiler</span><span>Pathway</span><span>Cohere</span><span>Voyage-Law2</span><span>Guardrails</span></div>
+              <div class="project__links">
+                <a href="https://github.com/Redluigi1/Inter-IIT-13-Pathway-LegalQA-Chatbot" target="_blank" rel="noopener" class="link">GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="project" data-hover data-cursor="Open">
+          <button class="project__row" aria-expanded="false">
+            <span class="project__n mono">02</span>
+            <span class="project__title">Passenger recovery <em class="serif">on a quantum annealer</em></span>
+            <span class="project__tag mono">Inter-IIT 12 · Gold</span>
+            <span class="project__plus" aria-hidden="true"></span>
+          </button>
+          <div class="project__body">
+            <div class="project__inner">
+              <p>When an airline changes its schedule, thousands of passengers have to be moved onto other flights without breaking PNR priority, cabin class, connection times or special passenger needs. For Mphasis's problem at the 12th Inter-IIT Tech Meet, we built a rule engine that scores every PNR and every candidate flight, then solves the reassignment as a mixed-integer program.</p>
+              <p>We solved it classically with Gurobi and as CQM and BQM formulations on D-Wave's quantum annealer, and sped up preprocessing with prune-and-search, multithreading and dynamic programming. The rules live in a Streamlit UI, so an operations team can retune them without touching code. It took gold, first of 20 IITs.</p>
+              <div class="project__metrics">
+                <div><b>Gold</b><span>rank 1 of 20 IITs</span></div>
+                <div><b>2</b><span>solvers: classical and quantum</span></div>
+                <div><b>3</b><span>ranked solutions per run</span></div>
+              </div>
+              <div class="chips mono"><span>D-Wave</span><span>CQM / BQM</span><span>Gurobi</span><span>Mixed-integer programming</span><span>Streamlit</span></div>
+              <div class="project__links">
+                <a href="https://github.com/Redluigi1/Passenger-Recovery-Optimization" target="_blank" rel="noopener" class="link">GitHub ↗</a>
+                <a href="https://drive.google.com/file/d/1UR59ydUBvfly3OPW83lyi90H74wFzNZg/view?usp=drive_link" target="_blank" rel="noopener" class="link">Report ↗</a>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="project" data-hover data-cursor="Open">
+          <button class="project__row" aria-expanded="false">
+            <span class="project__n mono">03</span>
+            <span class="project__title">MARS <em class="serif">medical report agents</em></span>
+            <span class="project__tag mono">Kaggle · MedGemma Challenge</span>
+            <span class="project__plus" aria-hidden="true"></span>
+          </button>
+          <div class="project__body">
+            <div class="project__inner">
+              <p>Scanned medical PDFs mix lab tables, prescriptions, discharge notes and X-rays on the same pages, and one generic prompt kept hallucinating structure. I split the job across 14 narrow MedGemma agents on Vertex AI, plus a YOLOv8 model I fine-tuned on a 301-image dataset I annotated myself to find scans inside PDFs. Every detected crop gets a second opinion from an LLM before it's accepted.</p>
+              <p>A shared report summary feeds the downstream agents so nothing re-reads raw pages, and a layered JSON repair chain keeps structured output from breaking. In the UI you can draw a box on a scan and ask about just that region.</p>
+              <div class="project__metrics">
+                <div><b>14</b><span>specialised agents</span></div>
+                <div><b>301</b><span>hand-annotated images</span></div>
+                <div><b>4</b><span>scan types detected</span></div>
+              </div>
+              <div class="chips mono"><span>MedGemma</span><span>Vertex AI</span><span>YOLOv8</span><span>FastAPI</span><span>React</span><span>Docker</span></div>
+              <div class="project__links">
+                <a href="https://github.com/Redluigi1/medgemma_hackathon" target="_blank" rel="noopener" class="link">GitHub ↗</a>
+                <a href="https://github.com/Redluigi1/medical_image_bounding_box_dataset" target="_blank" rel="noopener" class="link">Dataset ↗</a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ CONVOCATION ============ -->
+    <section class="grad" aria-label="IIT Guwahati, class of 2026">
+      <div class="grad__sticky">
+        <div class="grad__ambient" aria-hidden="true">
+          <img src="assets/img/convocation-900.webp" alt="" loading="lazy" width="900" height="1200" />
+        </div>
+        <div class="grad__media" data-grad>
+          <img src="assets/img/convocation-1600.webp" srcset="assets/img/convocation-900.webp 900w, assets/img/convocation-1600.webp 1600w" sizes="(max-width: 860px) 100vw, 75vh" alt="Ayush at IIT Guwahati convocation in a white and red ceremonial outfit, holding his degree" loading="lazy" width="1600" height="2133" />
+          <video class="grad__video" muted playsinline preload="none" aria-hidden="true"></video>
+        </div>
+        <div class="grad__text">
+          <p class="mono">Indian Institute of Technology Guwahati</p>
+          <h2 class="display">Class of <em class="serif">'26</em></h2>
+          <p class="mono">B.Tech CSE · Minor in Data Science &amp; AI · CGPA 8.92</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PATH ============ -->
+    <section class="path section" id="path">
+      <div class="section__label mono"><span class="idx">(05)</span> Path</div>
+      <h2 class="display path__title">Where I've <em class="serif">been</em></h2>
+
+      <ol class="timeline">
+        <li class="tl">
+          <span class="tl__date mono">Jun 2026–Now</span>
+          <div class="tl__main">
+            <h3>Ola Electric</h3>
+            <p class="tl__role">Graduate Engineer Trainee, Applied AI</p>
+          </div>
+          <p class="tl__desc">The self-improving warranty pipeline and the SAFAI war-room agent. <a class="link" href="#loop">Case studies 01 and 02</a></p>
+        </li>
+        <li class="tl">
+          <span class="tl__date mono">Aug 2025–May 2026</span>
+          <div class="tl__main">
+            <h3>IIT Guwahati</h3>
+            <p class="tl__role">Undergraduate researcher, agentic argument mining</p>
+          </div>
+          <p class="tl__desc">Advised by Prof. Ashish Anand. Resource paper submitted to LREC 2026. <a class="link" href="#research">Case study 03</a></p>
+        </li>
+        <li class="tl">
+          <span class="tl__date mono">May–Jul 2025</span>
+          <div class="tl__main">
+            <h3>Ola Krutrim</h3>
+            <p class="tl__role">AI Engineer Intern, Ola Maps</p>
+          </div>
+          <p class="tl__desc">Address NER for autocomplete at 50M+ calls a day, and ETA prediction. <a class="link" href="#maps">Case study 04</a></p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ HONOURS ============ -->
+    <section class="honors section" aria-labelledby="honors-title">
+      <div class="section__label mono"><span class="idx">(06)</span> Honours</div>
+      <h2 class="display" id="honors-title">A few <em class="serif">wins</em></h2>
+      <div class="honors__grid">
+        <article class="honor honor--big">
+          <span class="honor__big">Gold</span>
+          <h3>Inter-IIT Tech Meet 12</h3>
+          <p>Rank 1 of 20 IITs on the Mphasis problem statement, with the quantum passenger-recovery engine.</p>
+        </article>
+        <article class="honor">
+          <span class="honor__big">AIR 2</span>
+          <h3>EROH Hackathon, Naukri.com</h3>
+          <p>Out of 20,000+ students from IITs, NITs and IIITs. Won a scholarship.</p>
+        </article>
+        <article class="honor">
+          <span class="honor__big">4th</span>
+          <h3>Inter-IIT Tech Meet 13</h3>
+          <p>Of 22 IITs on the Pathway GenAI problem.</p>
+        </article>
+        <article class="honor">
+          <span class="honor__big">3rd</span>
+          <h3>OES ML Challenge</h3>
+          <p>Out of 5,000 participants. Prize winner.</p>
+        </article>
+        <article class="honor">
+          <span class="honor__big">1727</span>
+          <h3>Codeforces</h3>
+          <p>Max rating as <a class="link" href="https://codeforces.com/profile/mahnameisayush" target="_blank" rel="noopener">mahnameisayush</a>.</p>
+        </article>
+      </div>
+
+      <div class="early">
+        <h3 class="early__title mono">Before IIT</h3>
+        <ol class="early__list">
+          <li><span class="mono">2022</span><b>Mathematics Olympiad</b><p>Cleared IOQM, selected for the national training camp (INMOTC).</p></li>
+          <li><span class="mono">2022</span><b>Physics Olympiad</b><p>State topper in IOQP, qualified for INPhO.</p></li>
+          <li><span class="mono">2022</span><b>Chemistry &amp; Astronomy</b><p>Cleared IOQC and IOQA, qualified for INChO and INAO.</p></li>
+          <li><span class="mono">2022</span><b>KVPY SX</b><p>All India Rank 863.</p></li>
+          <li><span class="mono">2020</span><b>CBSE Class X</b><p>98.8%, third in the state.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ TOOLBOX ============ -->
+    <section class="tools section" aria-labelledby="tools-title">
+      <div class="section__label mono"><span class="idx">(07)</span> Toolbox</div>
+      <div class="tools__grid">
+        <h2 class="display" id="tools-title">What I <em class="serif">reach for</em></h2>
+        <div class="tools__group">
+          <h3 class="mono">LLMs &amp; agents</h3>
+          <p>LangGraph, LangChain, MCP, RAG, tool calling, LLM evaluation, prompt optimisation, ChromaDB</p>
+        </div>
+        <div class="tools__group">
+          <h3 class="mono">ML &amp; backend</h3>
+          <p>PyTorch, spaCy, scikit-learn, pandas, NumPy, YOLOv8, FastAPI, REST, Redis, Docker</p>
+        </div>
+        <div class="tools__group">
+          <h3 class="mono">Languages</h3>
+          <p>Python, C/C++, SQL</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUOTE ============ -->
+    <section class="quote section">
+      <p class="quote__text" data-words>
+        I'd rather be on the hook for a harder problem with real autonomy than a safer one with none.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- ============ CONTACT ============ -->
+  <footer class="contact" id="contact">
+    <div class="section__label mono"><span class="idx">(08)</span> Contact</div>
+    <h2 class="contact__title">
+      <span class="contact__line"><span>Let's build</span></span>
+      <span class="contact__line"><span class="serif">something hard.</span></span>
+    </h2>
+
+    <div class="contact__cta">
+      <a class="btn btn--primary" href="mailto:ayush171003@gmail.com" data-magnetic data-hover>
+        <span>ayush171003@gmail.com</span>
+      </a>
+      <a class="btn" href="assets/Ayush_Kumar_Resume.pdf" target="_blank" rel="noopener" data-magnetic data-hover>
+        <span>Resume ↗</span>
+      </a>
+    </div>
+
+    <div class="contact__foot">
+      <ul class="socials mono">
+        <li><a href="https://www.linkedin.com/in/ayush-kumar-5b4276262/" target="_blank" rel="noopener" data-hover>LinkedIn</a></li>
+        <li><a href="https://github.com/Redluigi1" target="_blank" rel="noopener" data-hover>GitHub</a></li>
+        <li><a href="https://codeforces.com/profile/mahnameisayush" target="_blank" rel="noopener" data-hover>Codeforces</a></li>
+      </ul>
+      <p class="mono contact__small">© 2026 Ayush Kumar · Built by hand in Bengaluru</p>
+      <a href="#top" class="mono contact__top" data-hover>Back to top ↑</a>
+    </div>
+
+    <div class="contact__giant" aria-hidden="true">AYUSH KUMAR</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/SplitText.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js" defer></script>
+  <script src="main.js" defer></script>
+  <script type="module" src="scene.js"></script>
+</body>
+</html>
