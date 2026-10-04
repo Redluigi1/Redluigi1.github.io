@@ -21,7 +21,7 @@ Live at https://redluigi1.github.io/, served by GitHub Pages from the `main` bra
 - `main.js` holds the loader, smooth scroll, the hero portrait (ASCII intro plus the warm monochrome grade in `gradePortrait`), the four case-study interactions (loop diagram, war-room trace, results chart, address NER demo) and the scroll reveals.
 - `scene.js` is the WebGL particle scene (noise, neural network, point-cloud portrait built from `assets/img/portrait-suit-cut-700.webp`). It loads three.js from jsDelivr.
 - The graduation clip is `assets/video/convocation.mp4`; set `MEDIA.gradVideo` in `main.js` to `null` to use the still instead.
-- To update the resume, replace `assets/Ayush_Kumar_Resume.pdf`.
+- The resume links point to a Google Drive file; update the URL in `index.html` (two places) to change it.
 
 ## Stack
 
